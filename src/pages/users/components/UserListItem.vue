@@ -34,7 +34,7 @@ const props = defineProps({
 defineEmits(['select'])
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .user-list-item {
   padding: 0 !important;
   margin-bottom: 4px;
@@ -49,13 +49,13 @@ defineEmits(['select'])
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   transition: all 0.2s ease;
-}
 
-.user-table-row:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-color: #b8b8b8;
-  background-color: #f5f5f5;
-  transform: translateY(-1px);
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-color: #b8b8b8;
+    background-color: #f5f5f5;
+    transform: translateY(-1px);
+  }
 }
 
 .user-cell {
@@ -65,41 +65,41 @@ defineEmits(['select'])
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
 
-.name-cell {
-  width: 15%;
-}
+  &.name-cell {
+    width: 15%;
+  }
 
-.organization-cell {
-  width: 20%;
-}
+  &.organization-cell {
+    width: 20%;
+  }
 
-.address-cell {
-  width: 20%;
-}
+  &.address-cell {
+    width: 20%;
+  }
 
-.worker-cell {
-  width: 15%;
-}
+  &.worker-cell {
+    width: 15%;
+  }
 
-.products-cell {
-  width: 15%;
+  &.products-cell {
+    width: 15%;
+  }
+
+  &.action-cell {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .product-link {
   color: #3370ff;
   text-decoration: none;
-}
 
-.product-link:hover {
-  text-decoration: underline;
-}
-
-.action-cell {
-  width: 10%;
-  display: flex;
-  justify-content: flex-end;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .action-buttons {

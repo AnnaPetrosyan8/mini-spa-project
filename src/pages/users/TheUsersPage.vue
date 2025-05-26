@@ -144,7 +144,7 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -182,11 +182,27 @@ onMounted(() => {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
 
-.name-cell {
-  width: 15%;
-  cursor: pointer;
+  &.name-cell {
+    width: 15%;
+    cursor: pointer;
+  }
+
+  &.organization-cell {
+    width: 20%;
+  }
+
+  &.address-cell {
+    width: 20%;
+  }
+
+  &.worker-cell {
+    width: 15%;
+  }
+
+  &.products-cell {
+    width: 15%;
+  }
 }
 
 .name-header-with-sort {
@@ -199,21 +215,5 @@ onMounted(() => {
 .sort-icon {
   color: #666;
   margin-left: 4px;
-}
-
-.organization-cell {
-  width: 20%;
-}
-
-.address-cell {
-  width: 20%;
-}
-
-.worker-cell {
-  width: 15%;
-}
-
-.products-cell {
-  width: 15%;
 }
 </style>

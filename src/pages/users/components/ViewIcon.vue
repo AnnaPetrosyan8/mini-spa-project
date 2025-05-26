@@ -23,7 +23,7 @@ function handleClick(event) {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .view-icon-container {
   display: flex;
   align-items: center;
@@ -39,21 +39,21 @@ function handleClick(event) {
   color: #666;
   transition: all 0.2s ease;
   padding: 4px;
-}
 
-.view-icon.with-circle {
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-}
+  &.with-circle {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+  }
 
-.view-icon:hover {
-  color: #3370ff;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-}
+  &:hover {
+    color: #3370ff;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+  }
 
-.view-icon:active {
-  transform: scale(0.95);
-  background-color: rgba(0, 0, 0, 0.1);
+  &:active {
+    transform: scale(0.95);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 </style>

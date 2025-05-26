@@ -62,7 +62,7 @@ function handleViewClick() {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .user-card {
   height: 100%;
   background-color: #ffffff;
@@ -71,13 +71,13 @@ function handleViewClick() {
   transition: all 0.2s ease;
   padding: 8px 4px;
   position: relative;
-}
 
-.user-card:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-  border-color: #b8b8b8;
-  background-color: #f5f5f5;
-  transform: translateY(-2px);
+  &:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    border-color: #b8b8b8;
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+  }
 }
 
 .card-row {
@@ -96,10 +96,10 @@ function handleViewClick() {
   font-size: 14px;
   color: #333;
   text-align: right;
-}
 
-.products {
-  color: #3370ff;
+  &.products {
+    color: #3370ff;
+  }
 }
 
 .eye-button-container {

@@ -82,7 +82,7 @@ function close() {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .user-details-card {
   width: 700px;
   max-width: 95vw;
